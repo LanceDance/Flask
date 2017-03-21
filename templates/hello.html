@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HELLOO</title>
+</head>
+<body>
+    <h1>
+    Hello {{ name | em | safe }}!
+    </h1>
+    <a href="{{ url_for('hello')}}">
+        Go back home
+    </a>
+<br>
+<img src="{{ url_for('static', filename='ball-python.jpg') }}">
+</body>
+</html>
